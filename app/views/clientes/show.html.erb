@@ -1,0 +1,10 @@
+<h1>Detalles del Cliente</h1>
+
+<p><strong>RUT:</strong> <%= @cliente.rut_cliente %></p>
+<p><strong>Correo:</strong> <%= @cliente.correo_cliente %></p>
+<p><strong>Nombre:</strong> <%= @cliente.nombre_cliente %></p>
+<p><strong>Apellido:</strong> <%= @cliente.apellido_cliente %></p>
+
+<%= link_to 'Editar', edit_cliente_path(@cliente) %>
+<%= link_to 'Eliminar', cliente_path(@cliente), data: { turbo_method: :delete, turbo_confirm: '¿Estás seguro?' } %>
+<%= link_to 'Volver al listado', clientes_path %>

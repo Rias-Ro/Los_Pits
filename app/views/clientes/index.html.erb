@@ -1,0 +1,28 @@
+
+<div class="container">
+  <h1>Listado de Clientes</h1>
+
+  <table class="clientes-table">
+    <thead>
+      <tr>
+        <th>Rut</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Correo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @clientes.each do |cliente| %>
+        <tr>
+          <td><%= cliente.rut_cliente %></td>
+          <td><%= cliente.nombre_cliente %></td>
+          <td><%= cliente.apellido_cliente %></td>
+          <td><%= cliente.correo_cliente %></td>
+          <td><%= link_to 'Ver', cliente_path(cliente) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <%= link_to 'Crear Cliente', new_cliente_path, class: 'create-link' %>
+</div>

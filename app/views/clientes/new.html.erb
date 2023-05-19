@@ -1,0 +1,42 @@
+
+<div class="container">
+  <h1>Crear Cliente</h1>
+
+  <%= form_with model: @cliente, url: clientes_path do |form| %>
+    <div id="error-messages" class="error-messages" style="display: none;">
+      <h2>Error: verifique si relleno bien los campos</h2>
+      <ul>
+        <% @cliente.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div>
+      <%= form.label :rut_cliente %>
+      <%= form.text_field :rut_cliente %>
+    </div>
+    <div>
+      <%= form.label :nombre_cliente %>
+      <%= form.text_field :nombre_cliente %>
+    </div>
+    <div>
+      <%= form.label :apellido_cliente %>
+      <%= form.text_field :apellido_cliente %>
+    </div>
+    <div>
+      <%= form.label :password_cliente %>
+      <%= form.password_field :password_cliente, autocomplete: "current-password" %>
+    </div>
+    <div>
+      <%= form.label :correo_cliente %>
+      <%= form.text_field :correo_cliente %>
+    </div>
+    <div>
+      <%= form.submit 'Guardar', class: 'submit-btn', id: 'submit-btn' %>
+    </div>
+
+  <% end %>
+
+  <%= link_to 'Volver al listado', clientes_path, class: 'back-link' %>
+</div>

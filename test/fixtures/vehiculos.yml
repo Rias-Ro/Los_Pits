@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  patente_vehiculo: MyString
+  color_vehiculo: MyString
+  modelo_vehiculo: MyString
+  cliente: one
+
+two:
+  patente_vehiculo: MyString
+  color_vehiculo: MyString
+  modelo_vehiculo: MyString
+  cliente: two

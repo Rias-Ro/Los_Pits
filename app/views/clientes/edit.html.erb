@@ -1,0 +1,33 @@
+<h1>Editar Cliente</h1>
+
+<%= form_with(model: @cliente, url: cliente_path(@cliente), method: :patch) do |form| %>
+  <div>
+    <%= form.label :rut_cliente %>
+    <%= form.text_field :rut_cliente, disabled: true %>
+  </div>
+  
+  <div>
+    <%= form.label :nombre_cliente %>
+    <%= form.text_field :nombre_cliente %>
+  </div>
+  
+  <div>
+    <%= form.label :apellido_cliente %>
+    <%= form.text_field :apellido_cliente %>
+  </div>
+  
+  <div>
+    <%= form.label :correo_cliente %>
+    <%= form.text_field :correo_cliente %>
+  </div>
+  
+  <div>
+    <%= form.submit 'Actualizar' %>
+  </div>
+  <div>
+    <%= link_to 'Eliminar', cliente_path(@cliente), method: :delete, data: { confirm: '¿Estás seguro?' } %>
+  </div>
+  
+<% end %>
+
+<%= link_to 'Volver al listado', clientes_path %>

@@ -1,0 +1,145 @@
+/* app/assets/stylesheets/clientes.css */
+
+.clientes-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .clientes-table th,
+  .clientes-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .clientes-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .create-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .create-link:hover {
+    background-color: #45a049;
+  }
+  
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+  
+  .container h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .container label {
+    color: #333;
+  }
+  
+  .container input[type="text"],
+  .container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .container .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .container .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .container .back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .container .back-link:hover {
+    text-decoration: underline;
+  }
+
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .error-messages {
+    background-color: #ffe6e6;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .submit-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .back-link {
+    color: blue;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  .clientes-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .clientes-table th,
+  .clientes-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .clientes-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .create-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .create-link:hover {
+    background-color: #45a049;
+  }
+  
+  
+  
