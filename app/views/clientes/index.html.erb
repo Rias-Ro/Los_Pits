@@ -1,4 +1,3 @@
-
 <div class="container">
   <h1>Listado de Clientes</h1>
 
@@ -9,6 +8,7 @@
         <th>Nombre</th>
         <th>Apellido</th>
         <th>Correo</th>
+        <th>Vehículo</th>
       </tr>
     </thead>
     <tbody>
@@ -18,7 +18,17 @@
           <td><%= cliente.nombre_cliente %></td>
           <td><%= cliente.apellido_cliente %></td>
           <td><%= cliente.correo_cliente %></td>
-          <td><%= link_to 'Ver', cliente_path(cliente) %></td>
+          <td>
+            <% if cliente.vehiculos.any? %>
+              <ul>
+                <% cliente.vehiculos.each do |vehiculo| %>
+                  <li><%= link_to vehiculo.nombre_vehiculo, vehiculo_path(vehiculo) %> - <%= vehiculo.color_vehiculo %></li>
+                <% end %>
+              </ul>
+            <% else %>  
+              <%= link_to 'Agregar Vehículo', new_vehiculo_path(rut_cliente: cliente.rut_cliente), class: 'agregar-vehiculo-link' %>           
+            <% end %>
+          </td>
         </tr>
       <% end %>
     </tbody>

@@ -1,0 +1,30 @@
+<h1>Listado de Vehículos</h1>
+
+<%= link_to 'Agregar vehículo', new_vehiculo_path, class: 'btn btn-primary' %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Patente</th>
+      <th>Color</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @vehiculos.each do |vehiculo| %>
+      <tr>
+        <td><%= vehiculo.patente_vehiculo %></td>
+        <td><%= vehiculo.color_vehiculo %></td>
+        <td>
+          <%= link_to 'Editar', edit_vehiculo_path(vehiculo) %>
+          <%= link_to 'Eliminar', vehiculo_path(vehiculo), method: :delete, data: { confirm: '¿Estás seguro de eliminar este vehículo?' } %>
+        </td>
+      </tr>
+    <% end %>
+    <tr>
+      <td colspan="3">
+        <%= link_to 'Volver a Clientes', clientes_path, class: 'btn btn-secondary' %>
+      </td>
+    </tr>
+  </tbody>
+</table>

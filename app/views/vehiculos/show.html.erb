@@ -1,0 +1,10 @@
+<h1>Detalles del vehículo</h1>
+
+<p><strong>Rut del Cliente:</strong> <%= @vehiculo.rut_cliente %></p>
+<p><strong>Patente del Vehículo:</strong> <%= @vehiculo.patente_vehiculo %></p>
+<p><strong>Modelo del Vehículo:</strong> <%= @vehiculo.modelo_vehiculo %></p>
+<p><strong>Color del Vehículo:</strong> <%= @vehiculo.color_vehiculo %></p>
+
+<%= link_to 'Editar', edit_vehiculo_path(@vehiculo) %>
+<%= link_to 'Eliminar', vehiculo_path(@vehiculo), method: :delete, data: { confirm: '¿Estás seguro de eliminar este vehículo?' } %>
+<%= link_to 'Volver', vehiculos_path %>
