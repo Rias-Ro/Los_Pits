@@ -1,0 +1,27 @@
+<h1>Editar vehículo</h1>
+
+<%= form_with model: @vehiculo, url: vehiculo_path(@vehiculo), method: :patch do |form| %>
+  <div>
+    <%= form.label :patente_vehiculo %>
+    <%= form.text_field :patente_vehiculo %>
+  </div>
+
+  <div>
+    <%= form.label :modelo_vehiculo %>
+    <%= form.text_field :modelo_vehiculo %>
+  </div>
+
+  <div>
+    <%= form.label :color_vehiculo %>
+    <%= form.text_field :color_vehiculo %>
+  </div>
+
+  <div>
+    <%= form.label :rut_cliente %>
+    <%= form.text_field :rut_cliente %>
+  </div>
+
+  <div>
+    <%= form.submit "Guardar" %>
+  </div>
+<% end %>

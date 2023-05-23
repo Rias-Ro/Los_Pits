@@ -1,15 +1,17 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+cliente_1:
+  rut_cliente: 12345678-9
+  correo_cliente: cliente1@example.com
+  password_cliente: password1
+  nombre_cliente: Cliente1
+  apellido_cliente: Apellido1
+  created_at: <%= Time.current %>
+  updated_at: <%= Time.current %>
 
-one:
-  rut_cliente: MyString
-  correo_cliente: MyString
-  password_cliente: MyString
-  nombre_cliente: MyString
-  apellido_cliente: MyString
-
-two:
-  rut_cliente: MyString
-  correo_cliente: MyString
-  password_cliente: MyString
-  nombre_cliente: MyString
-  apellido_cliente: MyString
+cliente_2:
+  rut_cliente: 23456789-0
+  correo_cliente: cliente2@example.com
+  password_cliente: password2
+  nombre_cliente: Cliente2
+  apellido_cliente: Apellido2
+  created_at: <%= Time.current %>
+  updated_at: <%= Time.current %>
