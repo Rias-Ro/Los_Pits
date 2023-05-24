@@ -8,15 +8,19 @@ postgres 15
 ##Pasos
 
 ##Clonar repositorio
+
 git clone https://github.com/Rias-Ro/Los_Pits.git
 
 ##navegar al directorio
+
 cd "nombre_repositorio"
 
 ##Instalar las gemas y dependencias del proyecto utilizando el comando
+
 bundle install
 
 ##Configurar la conexión a la base de datos PostgreSQL(o el de tu eleccion) en el archivo
+
 config/database.yml
 
 ##Ejecutar los comandos para crear la base de datos y migrar las tablas utilizando 
